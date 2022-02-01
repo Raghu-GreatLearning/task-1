@@ -6,12 +6,14 @@ def char_count(str)
         frequency[char] +=1
     }
     print "char count is  :: \n"
-    frequency.each {|key, value| puts  "#{key} : #{value}"}
-    
+    return frequency
+    # frequency.each {|key, value| puts  "#{key} : #{value}"}  
 end
 
 print "Enter your String :: - "
 
 input = gets.chomp
 
-char_count(input)
+output = char_count(input)
+
+output.each {|key, value| puts  "#{key} : #{value}"}  
