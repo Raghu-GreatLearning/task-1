@@ -16,4 +16,4 @@ input = gets.chomp
 
 output = char_count(input)
 
-output.each {|key, value| puts  "#{key} : #{value}"}  
+output.each {|key, value| puts  "#{key} : #{value}"}
