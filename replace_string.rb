@@ -14,16 +14,15 @@ words = user_input.split(' ')
 
 
 # M-2.......
-# user_input['is'] = "IS"
+# user_input[' is '] = " IS "
 
 
 # M-3 .............
-words.map{
-    |word|
+words.map do |word|
     if word == "is"
         word.replace("IS")
     end
-}
+end
 
 output_string = words.join(' ')
 

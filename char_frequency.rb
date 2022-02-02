@@ -1,12 +1,11 @@
 def char_count(str)
     split_arr = str.split('')
     frequency = Hash.new(0)
-    split_arr.each{
-        |char|
+    split_arr.each do |char|
         frequency[char] +=1
-    }
+    end
     print "char count is  :: \n"
-    return frequency
+    frequency
     # frequency.each {|key, value| puts  "#{key} : #{value}"}  
 end
 

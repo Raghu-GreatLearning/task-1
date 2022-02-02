@@ -4,14 +4,12 @@ class Double
     # end
 
     def taks_double(arr)
-        # new_arr = @arr
-        new_arr = arr
-        return new_arr.collect{|val| val*2}
+        arr.collect do |val|
+            val*2
+        end
     end
 end
 
-# creating intance of class
-make_double = Double.new()
 
 print "Enter length of array :: "
 n = gets.chomp.to_i
@@ -25,6 +23,10 @@ while i <= n
     input_arr << val
 end
 
-output = make_double.taks_double(input_arr)
+
+# creating intance of class
+make_double = Double.new()
+
 print "Doubled values are\n"
-puts output
+output = make_double.taks_double(input_arr)
+# puts output
